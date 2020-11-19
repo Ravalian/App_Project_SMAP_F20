@@ -37,7 +37,9 @@
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/btnRVBack"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtRVVehicleName"
+        app:layout_constraintVertical_bias="0.0"
         tools:listitem="@layout/activity_registered_vehicles_list_item" />
 </androidx.constraintlayout.widget.ConstraintLayout>

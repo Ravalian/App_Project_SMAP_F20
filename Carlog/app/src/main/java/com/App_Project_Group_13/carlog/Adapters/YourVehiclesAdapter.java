@@ -28,7 +28,7 @@ import java.util.ListIterator;
         private IYourVehiclesItemClickedListener listener;
 
     /*
-    private List<DBYourVehiclesModel> YVList = new List<DBYourVehiclesModel>() {
+    private List<DBPlaceholder> YVList = new List<DBPlaceholder>() {
         @Override
         public int size() {
             return 0;

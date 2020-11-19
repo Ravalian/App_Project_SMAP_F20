@@ -28,6 +28,10 @@
     <string name="btn_ActivityUserInterface_RegisteredVehicles">Registered Vehicles</string>
 
     <!--Activity vehicle details-->
+    <string name="txt_ActivityVehicleDetails_Vehicle_Name">Vehicle name</string>
+    <string name="btn_ActivityVehicleDetails_Back">Back</string>
+    <string name="txt_ActivityVehicleDetails_Date">Date</string>
+    <string name="txt_ActivityVehicleDetails_Name">Name</string>
 
     <!--Activity vehicle log-->
 

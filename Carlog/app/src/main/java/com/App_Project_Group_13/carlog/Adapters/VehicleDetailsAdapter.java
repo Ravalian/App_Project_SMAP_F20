@@ -3,13 +3,13 @@ package com.app_project_group_13.carlog.Adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.app_project_group_13.carlog.Activities.VehicleDetails;
 import com.app_project_group_13.carlog.R;
 
 import java.util.Collection;
@@ -17,16 +17,16 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-public class RegisteredVehiclesAdapter extends RecyclerView.Adapter<RegisteredVehiclesAdapter.RegisteredVehiclesViewHolder> {
+public class VehicleDetailsAdapter extends RecyclerView.Adapter<VehicleDetailsAdapter.VehicleDetailsViewHolder> {
 
-    public interface IRegisteredVehiclesItemClickedListener {
-        void onRegisteredVehicleClicked(int RVID);
+    public interface IVehicleDetailsItemClickedListener {
+        void onVehicleDetailClicked(int VDID);
     }
 
-    private IRegisteredVehiclesItemClickedListener listener;
+    private IVehicleDetailsItemClickedListener listener;
 
     /*
-    private List<DBPlaceholder> RVList = new List<DBPlaceholder>() {
+    private List<DBPlaceholder> VDList = new List<DBPlaceholder>() {
         @Override
         public int size() {
             return 0;
@@ -44,7 +44,7 @@ public class RegisteredVehiclesAdapter extends RecyclerView.Adapter<RegisteredVe
 
         @NonNull
         @Override
-        public Iterator<DBRegisteredVehiclesModel> iterator() {
+        public Iterator<DBPlaceholder> iterator() {
             return null;
         }
 
@@ -61,7 +61,7 @@ public class RegisteredVehiclesAdapter extends RecyclerView.Adapter<RegisteredVe
         }
 
         @Override
-        public boolean add(DBRegisteredVehiclesModel dbRegisteredVehiclesModel) {
+        public boolean add(DBPlaceholder dbPlaceholder) {
             return false;
         }
 
@@ -76,12 +76,12 @@ public class RegisteredVehiclesAdapter extends RecyclerView.Adapter<RegisteredVe
         }
 
         @Override
-        public boolean addAll(@NonNull Collection<? extends DBRegisteredVehiclesModel> collection) {
+        public boolean addAll(@NonNull Collection<? extends DBPlaceholder> collection) {
             return false;
         }
 
         @Override
-        public boolean addAll(int i, @NonNull Collection<? extends DBRegisteredVehiclesModel> collection) {
+        public boolean addAll(int i, @NonNull Collection<? extends DBPlaceholder> collection) {
             return false;
         }
 
@@ -101,22 +101,22 @@ public class RegisteredVehiclesAdapter extends RecyclerView.Adapter<RegisteredVe
         }
 
         @Override
-        public DBRegisteredVehiclesModel get(int i) {
+        public DBPlaceholder get(int i) {
             return null;
         }
 
         @Override
-        public DBRegisteredVehiclesModel set(int i, DBRegisteredVehiclesModel dbRegisteredVehiclesModel) {
+        public DBPlaceholder set(int i, DBPlaceholder dbPlaceholder) {
             return null;
         }
 
         @Override
-        public void add(int i, DBRegisteredVehiclesModel dbRegisteredVehiclesModel) {
+        public void add(int i, DBPlaceholder dbPlaceholder) {
 
         }
 
         @Override
-        public DBRegisteredVehiclesModel remove(int i) {
+        public DBPlaceholder remove(int i) {
             return null;
         }
 
@@ -132,58 +132,58 @@ public class RegisteredVehiclesAdapter extends RecyclerView.Adapter<RegisteredVe
 
         @NonNull
         @Override
-        public ListIterator<DBRegisteredVehiclesModel> listIterator() {
+        public ListIterator<DBPlaceholder> listIterator() {
             return null;
         }
 
         @NonNull
         @Override
-        public ListIterator<DBRegisteredVehiclesModel> listIterator(int i) {
+        public ListIterator<DBPlaceholder> listIterator(int i) {
             return null;
         }
 
         @NonNull
         @Override
-        public List<DBRegisteredVehiclesModel> subList(int i, int i1) {
+        public List<DBPlaceholder> subList(int i, int i1) {
             return null;
         }
     }
     */
 
-    public RegisteredVehiclesAdapter(IRegisteredVehiclesItemClickedListener listener) {
+    public VehicleDetailsAdapter(IVehicleDetailsItemClickedListener listener) {
         this.listener = listener;
     }
 
     @NonNull
     @Override
-    public RegisteredVehiclesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public VehicleDetailsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v;
-        v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_registered_vehicles_list_item, parent, false);
-        RegisteredVehiclesViewHolder vh = new RegisteredVehiclesViewHolder(v, listener);
+        v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_vehicle_details_list_item, parent, false);
+        VehicleDetailsViewHolder vh = new VehicleDetailsViewHolder(v, listener);
         return null;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RegisteredVehiclesViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull VehicleDetailsViewHolder holder, int position) {
 
     }
 
-    public class RegisteredVehiclesViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class VehicleDetailsViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         //ViewHolder ui widget references
-        ImageView img;
-        TextView txtVehicleName;
+        TextView txtDate;
+        TextView txtName;
 
-        IRegisteredVehiclesItemClickedListener listener;
+        IVehicleDetailsItemClickedListener listener;
 
         //constructor
-        public RegisteredVehiclesViewHolder(@NonNull View itemView, IRegisteredVehiclesItemClickedListener RegisteredVehiclesItemClickedListener) {
+        public VehicleDetailsViewHolder(@NonNull View itemView, IVehicleDetailsItemClickedListener VehicleDetailsItemClickedListener) {
             super(itemView);
 
             //get references from the layout file
-            img = itemView.findViewById(R.id.imgRVVehicle);
-            txtVehicleName = itemView.findViewById(R.id.txtRVLIVehicleName);
-            listener = RegisteredVehiclesItemClickedListener;
+            txtDate = itemView.findViewById(R.id.txtVDLIDate);
+            txtName = itemView.findViewById(R.id.txtVDLIName);
+            listener = VehicleDetailsItemClickedListener;
 
             //set click listener for whole list item
             itemView.setOnClickListener(this);
@@ -191,7 +191,7 @@ public class RegisteredVehiclesAdapter extends RecyclerView.Adapter<RegisteredVe
 
         @Override
         public void onClick(View view) {
-            //listener.onRegisteredVehicleClicked(RVList.get(getAdapterPosition()).getRVID());
+            //listener.onVehicleDetailClicked(VDList.get(getAdapterPosition()).getVDID());
         }
     }
 

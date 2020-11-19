@@ -32,6 +32,7 @@
     <!--Activity vehicle log-->
 
     <!--Activity your logs-->
+    <string name="txt_ActivityYourLogs_YourLogs">Your logs</string>
     <string name="btn_ActivityYourLogs_Back">Back</string>
 
     <!--Activity your vehicles-->

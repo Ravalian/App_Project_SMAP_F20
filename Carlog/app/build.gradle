@@ -1,6 +1,5 @@
 plugins {
     id 'com.android.application'
-    id: 'com.google.gms.google-services'
 }
 
 android {
@@ -8,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.App_Project_Group_13.carlog"
+        applicationId "com.app_project_group_13.carlog"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
@@ -33,17 +32,16 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.3'
-    implementation 'androidx.wear:wear:1.0.0'
-<<<<<<< HEAD
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'com.android.volley:volley:1.1.1'
     implementation 'com.google.code.gson:gson:2.8.6'
-=======
-    implementation platform('com.google.firebase:firebase-bom:26.1.0')
     implementation 'com.google.firebase:firebase-analytics'
->>>>>>> 08ca6eb0c12d6348915a8d81ea10a11e5803f047
+    implementation platform('com.google.firebase:firebase-bom:26.1.0')
+
     testImplementation 'junit:junit:4.+'
+
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    compileOnly 'com.google.android.wearable:wearable:2.6.0'
+
+
 }

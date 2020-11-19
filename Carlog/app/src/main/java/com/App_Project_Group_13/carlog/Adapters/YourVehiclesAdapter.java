@@ -1,4 +1,4 @@
-package com.App_Project_Group_13.carlog.Adapters;
+package com.app_project_group_13.carlog.Adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.App_Project_Group_13.carlog.Activities.YourLogs;
-import com.App_Project_Group_13.carlog.Activities.YourVehicles;
-import com.App_Project_Group_13.carlog.R;
+import com.app_project_group_13.carlog.Activities.YourLogs;
+import com.app_project_group_13.carlog.Activities.YourVehicles;
+import com.app_project_group_13.carlog.R;
 
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-public class YourVehiclesAdapter extends RecyclerView.Adapter<YourVehiclesAdapter.YourVehiclesViewHolder> {
+    public class YourVehiclesAdapter extends RecyclerView.Adapter<YourVehiclesAdapter.YourVehiclesViewHolder> {
 
-    public interface IYourVehiclesItemClickedListener {
-        void onYourVehiclesClicked(int YVID);
-    }
+        public interface IYourVehiclesItemClickedListener {
+            void onYourVehiclesClicked(int YVID);
+        }
 
-    private IYourVehiclesItemClickedListener listener;
+        private IYourVehiclesItemClickedListener listener;
 
     /*
     private List<DBYourVehiclesModel> YVList = new List<DBYourVehiclesModel>() {
@@ -152,53 +152,53 @@ public class YourVehiclesAdapter extends RecyclerView.Adapter<YourVehiclesAdapte
     }
     */
 
-    public YourVehiclesAdapter(IYourVehiclesItemClickedListener listener) {
-        this.listener = listener;
-    }
+        public YourVehiclesAdapter(IYourVehiclesItemClickedListener listener) {
+            this.listener = listener;
+        }
 
-    @NonNull
-    @Override
-    public YourVehiclesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v;
-        v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_your_vehicles_list_item, parent, false);
-        YourVehiclesViewHolder vh = new YourVehiclesViewHolder(v, listener);
-        return null;
-    }
-
-    @Override
-    public void onBindViewHolder(@NonNull YourVehiclesAdapter.YourVehiclesViewHolder holder, int position) {
-
-    }
-
-    public class YourVehiclesViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-
-        //ViewHolder ui wiget references
-        ImageView img;
-        TextView txtVehicleName;
-
-        IYourVehiclesItemClickedListener listener;
-
-        //constructor
-        public  YourVehiclesViewHolder(@NonNull View itemView, IYourVehiclesItemClickedListener YourVehiclesItemClickedListener) {
-            super(itemView);
-
-            //get references from layout file
-            img = itemView.findViewById(R.id.imgYVVehicle);
-            txtVehicleName = itemView.findViewById(R.id.txtYVVehicleName);
-            listener = YourVehiclesItemClickedListener;
-
-            //set click listener for whole list item
-            itemView.setOnClickListener(this);
+        @NonNull
+        @Override
+        public YourVehiclesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            View v;
+            v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_your_vehicles_list_item, parent, false);
+            YourVehiclesViewHolder vh = new YourVehiclesViewHolder(v, listener);
+            return null;
         }
 
         @Override
-        public void onClick(View view) {
-            //listener.onYourVehiclesClicked(YVList.get(getAdapterPosition()).getYVID());
-        }
-    }
+        public void onBindViewHolder(@NonNull YourVehiclesAdapter.YourVehiclesViewHolder holder, int position) {
 
-    @Override
-    public int getItemCount() {
-        return 0;
-    }
+        }
+
+        public class YourVehiclesViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+            //ViewHolder ui wiget references
+            ImageView img;
+            TextView txtVehicleName;
+
+            IYourVehiclesItemClickedListener listener;
+
+            //constructor
+            public  YourVehiclesViewHolder(@NonNull View itemView, IYourVehiclesItemClickedListener YourVehiclesItemClickedListener) {
+                super(itemView);
+
+                //get references from layout file
+                img = itemView.findViewById(R.id.imgYVVehicle);
+                txtVehicleName = itemView.findViewById(R.id.txtYVVehicleName);
+                listener = YourVehiclesItemClickedListener;
+
+                //set click listener for whole list item
+                itemView.setOnClickListener(this);
+            }
+
+            @Override
+            public void onClick(View view) {
+                //listener.onYourVehiclesClicked(YVList.get(getAdapterPosition()).getYVID());
+            }
+        }
+
+        @Override
+        public int getItemCount() {
+            return 0;
+        }
 }

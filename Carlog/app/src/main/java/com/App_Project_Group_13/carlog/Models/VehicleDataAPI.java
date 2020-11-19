@@ -1,5 +1,4 @@
-
-package com.App_Project_Group_13.carlog.Models;
+package com.app_project_group_13.carlog.Models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

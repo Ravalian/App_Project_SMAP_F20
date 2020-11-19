@@ -1,4 +1,4 @@
-package com.App_Project_Group_13.carlog;
+package com.app_project_group_13.carlog;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.App_Project_Group_13.carlog.Adapters;
+package com.app_project_group_13.carlog.Adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.App_Project_Group_13.carlog.R;
+import com.app_project_group_13.carlog.R;
 
 import java.util.Collection;
 import java.util.Iterator;

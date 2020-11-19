@@ -1,17 +1,4 @@
-package com.App_Project_Group_13.carlog.Repository;
-
-import android.app.Application;
+package com.app_project_group_13.carlog.Repository;
 
 public class Repository {
-
-
-    public Repository(Application app){
-
-    }
-
-
-
-    //////////////// API REQUESTS ///////////////////////
-    public
-
 }

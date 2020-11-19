@@ -1,10 +1,10 @@
-package com.App_Project_Group_13.carlog.Activities;
+package com.app_project_group_13.carlog.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.App_Project_Group_13.carlog.R;
+import com.app_project_group_13.carlog.R;
 
 public class UserInterface extends AppCompatActivity {
 

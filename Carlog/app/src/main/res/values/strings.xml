@@ -14,28 +14,28 @@
 
     <!--Activity register vehicle-->
     <string name="txt_ActivityRegisterVehicle_LicencePlate">Enter your licence plate</string>
-    <string name="btn_ActivityRegisterVehicle_Back">Back</string>
     <string name="edit_ActivityRegisterVehicle_LicencePlate">Licence Plate</string>
-
+    <string name="btn_ActivityRegisterVehicle_Back">Back</string>
 
     <!--Activity registered vehicles-->
-    <string name="btn_ActivityRegisteredVehicles_Back">Back</string>
     <string name="txt_ActivityRegisteredVehicles_VehicleName">Vehicle Name</string>
+    <string name="btn_ActivityRegisteredVehicles_Back">Back</string>
+
+    <!--Activity user interface-->
     <string name="btn_ActivityUserInterface_YourVehicles">Your Vehicles</string>
     <string name="btn_ActivityUserInterface_YourLogs">Your Logs</string>
     <string name="btn_ActivityUserInterface_RegisterVehicle">Register Vehicle</string>
     <string name="btn_ActivityUserInterface_RegisteredVehicles">Registered Vehicles</string>
-    <string name="txt_ActivityRegisteredVehicles_VehicleName">Vehicle Name</string>
-
-    <!--Activity user interface-->
 
     <!--Activity vehicle details-->
 
     <!--Activity vehicle log-->
 
-    <!--Activity your log-->
+    <!--Activity your logs-->
+    <string name="btn_ActivityYourLogs_Back">Back</string>
 
     <!--Activity your vehicles-->
-
+    <string name="txt_ActivityYourVehicles_VehicleName">Vehicle Name</string>
+    <string name="btn_ActivityYourVehicles_Back">Back</string>
 
 </resources>

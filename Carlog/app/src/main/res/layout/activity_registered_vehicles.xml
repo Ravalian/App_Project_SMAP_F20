@@ -7,7 +7,7 @@
     tools:context=".Activities.RegisteredVehicles">
 
     <TextView
-        android:id="@+id/txtVehicleName"
+        android:id="@+id/txtRVVehicleName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -19,7 +19,7 @@
         tools:text="@string/txt_ActivityRegisteredVehicles_VehicleName" />
 
     <Button
-        android:id="@+id/btnBack"
+        android:id="@+id/btnRVBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -35,9 +35,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintBottom_toTopOf="@+id/btnRVBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVehicleName"
+        app:layout_constraintTop_toBottomOf="@+id/txtRVVehicleName"
         tools:listitem="@layout/activity_registered_vehicles_list_item" />
 </androidx.constraintlayout.widget.ConstraintLayout>

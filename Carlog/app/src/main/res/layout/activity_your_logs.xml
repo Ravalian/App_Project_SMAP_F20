@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".Activities.YourLogs">
 
+    <Button
+        android:id="@+id/btnYLBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/btn_ActivityYourLogs_Back" />
 </androidx.constraintlayout.widget.ConstraintLayout>

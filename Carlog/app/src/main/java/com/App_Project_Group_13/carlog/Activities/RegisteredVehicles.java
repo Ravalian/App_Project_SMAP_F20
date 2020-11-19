@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -39,7 +38,7 @@ public class RegisteredVehicles extends AppCompatActivity {
         rcvList.setLayoutManager(new LinearLayoutManager(this));
         //rcvList.setAdapter(adapter); //skal oprates
 
-        txtVehicleName = findViewById(R.id.txtVehicleName);
+        txtVehicleName = findViewById(R.id.txtRVVehicleName);
 
         btnBack = findViewById(R.id.btnBack);
         btnBack.setOnClickListener(new View.OnClickListener() {

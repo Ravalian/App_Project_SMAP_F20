@@ -13,12 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Carlog">
-        <activity android:name=".Activities.VehicleLog"></activity>
+        <activity android:name=".Activities.VehicleLog" />
         <activity android:name=".Activities.VehicleDetails" />
         <activity android:name=".Activities.RegisteredVehicles" />
         <activity android:name=".Activities.RegisterVehicle" />
         <activity android:name=".Activities.YourLogs" />
-        <activity android:name=".Activities.YourVehicle" />
+        <activity android:name=".Activities.YourVehicles" />
         <activity android:name=".Activities.UserInterface" />
 
         <uses-library

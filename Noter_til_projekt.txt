@@ -1,0 +1,13 @@
+TODO List:
+
+
+
+Kommentarer:
+
+
+
+Links til forskellige bil informations api:
+- https://www.motorapi.dk/ (100 opslag pr. dag - Lille mængde information, men alt det vigtige er der)
+- https://www.nummerpladeapi.dk/ (14 dages gratis api - ALT information omkring bilen er at finde her)
+- https://api.motor.com/v1/documentation (den skal kigges lidt igennem, er ikke helt sikker på hvordan den skal tilgås. Hovedside: https://www.motor.com/)
+- 

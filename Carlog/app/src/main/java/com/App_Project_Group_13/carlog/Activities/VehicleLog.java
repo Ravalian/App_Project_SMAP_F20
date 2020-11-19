@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 import com.App_Project_Group_13.carlog.R;
 
+
+//skal laves til en fragments
 public class VehicleLog extends AppCompatActivity {
 
     @Override

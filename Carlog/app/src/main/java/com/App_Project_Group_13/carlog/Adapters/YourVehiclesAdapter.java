@@ -19,16 +19,16 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-    public class YourVehiclesAdapter extends RecyclerView.Adapter<YourVehiclesAdapter.YourVehiclesViewHolder> {
+public class YourVehiclesAdapter extends RecyclerView.Adapter<YourVehiclesAdapter.YourVehiclesViewHolder> {
 
-        public interface IYourVehiclesItemClickedListener {
-            void onYourVehiclesClicked(int YVID);
-        }
+    public interface IYourVehiclesItemClickedListener {
+        void onYourVehiclesClicked(int YVID);
+    }
 
-        private IYourVehiclesItemClickedListener listener;
+    private IYourVehiclesItemClickedListener listener;
 
     /*
-    private List<DBPlaceholder> YVList = new List<DBPlaceholder>() {
+    private List<DBPlaceHolder> YVList = new List<DBPlaceHolder>() {
         @Override
         public int size() {
             return 0;
@@ -152,53 +152,53 @@ import java.util.ListIterator;
     }
     */
 
-        public YourVehiclesAdapter(IYourVehiclesItemClickedListener listener) {
-            this.listener = listener;
-        }
+    public YourVehiclesAdapter(IYourVehiclesItemClickedListener listener) {
+        this.listener = listener;
+    }
 
-        @NonNull
-        @Override
-        public YourVehiclesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            View v;
-            v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_your_vehicles_list_item, parent, false);
-            YourVehiclesViewHolder vh = new YourVehiclesViewHolder(v, listener);
-            return null;
-        }
+    @NonNull
+    @Override
+    public YourVehiclesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v;
+        v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_your_vehicles_list_item, parent, false);
+        YourVehiclesViewHolder vh = new YourVehiclesViewHolder(v, listener);
+        return null;
+    }
 
-        @Override
-        public void onBindViewHolder(@NonNull YourVehiclesAdapter.YourVehiclesViewHolder holder, int position) {
+    @Override
+    public void onBindViewHolder(@NonNull YourVehiclesAdapter.YourVehiclesViewHolder holder, int position) {
 
-        }
+    }
 
-        public class YourVehiclesViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class YourVehiclesViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-            //ViewHolder ui wiget references
-            ImageView img;
-            TextView txtVehicleName;
+        //ViewHolder ui wiget references
+        ImageView img;
+        TextView txtVehicleName;
 
-            IYourVehiclesItemClickedListener listener;
+        IYourVehiclesItemClickedListener listener;
 
-            //constructor
-            public  YourVehiclesViewHolder(@NonNull View itemView, IYourVehiclesItemClickedListener YourVehiclesItemClickedListener) {
-                super(itemView);
+        //constructor
+        public  YourVehiclesViewHolder(@NonNull View itemView, IYourVehiclesItemClickedListener YourVehiclesItemClickedListener) {
+            super(itemView);
 
-                //get references from layout file
-                img = itemView.findViewById(R.id.imgYVVehicle);
-                txtVehicleName = itemView.findViewById(R.id.txtYVVehicleName);
-                listener = YourVehiclesItemClickedListener;
+            //get references from layout file
+            img = itemView.findViewById(R.id.imgYVVehicle);
+            txtVehicleName = itemView.findViewById(R.id.txtYVVehicleName);
+            listener = YourVehiclesItemClickedListener;
 
-                //set click listener for whole list item
-                itemView.setOnClickListener(this);
-            }
-
-            @Override
-            public void onClick(View view) {
-                //listener.onYourVehiclesClicked(YVList.get(getAdapterPosition()).getYVID());
-            }
+            //set click listener for whole list item
+            itemView.setOnClickListener(this);
         }
 
         @Override
-        public int getItemCount() {
-            return 0;
+        public void onClick(View view) {
+            //listener.onYourVehiclesClicked(YVList.get(getAdapterPosition()).getYVID());
         }
+    }
+
+    @Override
+    public int getItemCount() {
+        return 0;
+    }
 }

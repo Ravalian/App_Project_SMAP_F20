@@ -29,7 +29,9 @@
         app:layout_constraintBottom_toTopOf="@+id/btnVDBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVDName" />
+        app:layout_constraintTop_toBottomOf="@+id/txtVDName"
+        tools:itemCount="10"
+        tools:listitem="@layout/activity_vehicle_details_list_item" />
 
     <Button
         android:id="@+id/btnVDBack"

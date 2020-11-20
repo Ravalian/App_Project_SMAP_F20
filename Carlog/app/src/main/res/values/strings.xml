@@ -43,4 +43,7 @@
     <string name="txt_ActivityYourVehicles_VehicleName">Vehicle Name</string>
     <string name="btn_ActivityYourVehicles_Back">Back</string>
 
+    <!--Activity all list item -->
+    <string name="img_ActivityAllListItem_ImgOfVehicle">Img of vehicle</string>
+
 </resources>

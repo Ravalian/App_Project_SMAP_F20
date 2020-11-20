@@ -1,4 +1,4 @@
-package com.App_Project_Group_13.carlog.Adapters;
+package com.app_project_group_13.carlog.Adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,8 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.App_Project_Group_13.carlog.Activities.RegisteredVehicles;
-import com.App_Project_Group_13.carlog.Models.VehicleDataFirebase;
+import com.app_project_group_13.carlog.Activities.RegisteredVehicles;
+import com.app_project_group_13.carlog.Models.VehicleDataFirebase;
 import com.app_project_group_13.carlog.R;
 
 import java.util.ArrayList;
@@ -29,8 +29,9 @@ public class RegisteredVehiclesAdapter extends RecyclerView.Adapter<RegisteredVe
     private IRegisteredVehiclesItemClickedListener listener;
 
     private ArrayList<VehicleDataFirebase> vehicles;
+
     /*
-    private List<DBPlaceholder> RVList = new List<DBPlaceholder>() {
+    private List<DBPlaceHolder> RVList = new List<DBPlaceHolder>() {
         @Override
         public int size() {
             return 0;

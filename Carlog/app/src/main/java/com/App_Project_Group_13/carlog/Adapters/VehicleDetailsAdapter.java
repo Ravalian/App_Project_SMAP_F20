@@ -26,7 +26,7 @@ public class VehicleDetailsAdapter extends RecyclerView.Adapter<VehicleDetailsAd
     private IVehicleDetailsItemClickedListener listener;
 
     /*
-    private List<DBPlaceholder> VDList = new List<DBPlaceholder>() {
+    private List<DBPlaceHolder> VDList = new List<DBPlaceHolder>() {
         @Override
         public int size() {
             return 0;

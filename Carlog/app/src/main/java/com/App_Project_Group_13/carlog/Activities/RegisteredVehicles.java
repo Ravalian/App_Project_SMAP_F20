@@ -1,4 +1,4 @@
-package com.App_Project_Group_13.carlog.Activities;
+package com.app_project_group_13.carlog.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,8 +21,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import com.App_Project_Group_13.carlog.Models.VehicleDataFirebase;
-import com.App_Project_Group_13.carlog.Adapters.RegisteredVehiclesAdapter;
+import com.app_project_group_13.carlog.Models.VehicleDataFirebase;
+import com.app_project_group_13.carlog.Adapters.RegisteredVehiclesAdapter;
 import com.App_Project_Group_13.carlog.Constants.Constants;
 
 import java.util.ArrayList;

@@ -30,7 +30,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtYourLogs" />
+        app:layout_constraintTop_toBottomOf="@+id/txtYourLogs"
+        tools:itemCount="10"
+        tools:listitem="@layout/activity_your_logs_list_item" />
 
     <Button
         android:id="@+id/btnYLBack"

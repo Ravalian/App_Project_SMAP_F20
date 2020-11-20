@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -22,6 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import com.App_Project_Group_13.carlog.Models.VehicleDataFirebase;
 import com.App_Project_Group_13.carlog.Adapters.RegisteredVehiclesAdapter;
+import com.App_Project_Group_13.carlog.Constants.Constants;
 
 import java.util.ArrayList;
 
@@ -34,6 +36,7 @@ public class RegisteredVehicles extends AppCompatActivity implements RegisteredV
     private Button btnBack;
     private ArrayList<VehicleDataFirebase> vehicles;
     private RegisteredVehiclesAdapter adapter;
+    private Constants constants;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,6 +111,7 @@ public class RegisteredVehicles extends AppCompatActivity implements RegisteredV
 
     @Override
     public void onRegisteredVehicleClicked(int RVID) {
-
+        Intent intent = new Intent(this, com.app_project_group_13.carlog.Activities.VehicleDetails.class);
+        intent.putExtra(constants.ID, RVID);
     }
 }
